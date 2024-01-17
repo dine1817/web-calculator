@@ -4,7 +4,12 @@
     margin: 0px;
 }
 body{
-    background-color: rgb(83, 81, 81);
+    height: 100vh;
+    background: url("./pay-2662758_1920.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.68))
+    ,url("./pay-2662758_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: monospace;
 }
 header{
@@ -12,33 +17,44 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    font-size: 18px;
-    text-shadow: 1px 1px 2px white;
+    color: whitesmoke;
+    font-size: 12px;
+}
+#num_row1 input,#num_row2 input,#num_row3 input,#num_row4 input,#num_row5 input{
+    font-size: 15px;
+    font-weight: 550;
 }
 section{
-    /* rgb(229,239,248) */
     height: 600px; 
     width: 450px;
-    background-color: rgb(229,239,248);
+    background-color: #E760E1;
     margin: 0px auto;
     border-radius: 30px;
+    border: 5px solid #5D5AFF;
 }
-#darkDiv{
-    position: relative;
-}
-#dMode{
-    position: absolute;
-    top: 80px;
-    left: 62%;
-    font-size: 28px;
+.mainHead{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 #headArea{
+    flex-basis: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: x-large;
-    padding: 15px 0px;
+    padding: 1rem 0;
+    padding-left: 50px;
+}
+#darkDiv,#lightDiv{
+    flex-basis: 10%;
+    padding: 0.7rem 0;
+}
+#darkDiv > img,#lightDiv > img{
+    width: 35px;
+}
+#lightDiv{
+    display: none;
 }
 #resultArea{
     display: flex;
@@ -48,7 +64,7 @@ section{
 #resultArea > input{
     width: 550px;
     padding: 20px;
-    background-color: #839299;
+    background-color: #5D5AFF;
     border-radius: 10px;
     outline: outset;
     outline-width: 10px;
@@ -58,20 +74,14 @@ section{
 }
 #onOffArea{
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     padding: 20px;
-}
-#div_result > input{
-    width: 150px;
-    padding: 10px;
-    background-color: #595E62;
-    border: none;
 }
 #div_btn > input{
     width: 85px;
     padding: 8px;
     border: none;
-    background-color: #E6F0F9;
+    /* background-color: #5D5AFF; */
     border-radius: 10px;
     box-shadow: 1px 1px 5px black;
     font-size: 14px;
@@ -86,7 +96,7 @@ section{
     width: 70px;
     padding: 23px;
     border: none;
-    background-color: #E6F0F9;
+    /* background-color: #5D5AFF; */
     border-radius: 10px;
     box-shadow: inset 1px 1px 3px black;
 }
@@ -99,7 +109,7 @@ section{
     width: 70px;
     padding: 23px;
     border: none;
-    background-color: #E6F0F9;
+    /* background-color: #5D5AFF; */
     border-radius: 10px;
     box-shadow: inset 1px 1px 3px black;
 }
@@ -120,7 +130,7 @@ section{
     width: 70px;
     padding: 23px;
     border: none;
-    background-color: #E6F0F9;
+    /* background-color: #5D5AFF; */
     border-radius: 10px;
     box-shadow: inset 1px 1px 3px black;
 }
@@ -131,7 +141,7 @@ section{
     width: 70px;
     padding: 23px;
     border: none;
-    background-color: #E6F0F9;
+    /* background-color: #5D5AFF; */
     border-radius: 10px;
     box-shadow: inset 1px 1px 3px black;
 }
@@ -142,7 +152,7 @@ section{
     width: 70px;
     padding: 23px;
     border: none;
-    background-color: #E6F0F9;
+    /* background-color: #5D5AFF; */
     border-radius: 10px;
     box-shadow: inset 1px 1px 3px black;
 }
@@ -154,7 +164,7 @@ section{
     height: 145px;
     padding: 23px;
     border: none;
-    background-color: #E6F0F9;
+    /* background-color: #5D5AFF; */
     border-radius: 10px;
     box-shadow: inset 1px 1px 3px black;
 }
@@ -165,7 +175,7 @@ section{
     width: 70px;
     padding: 23px;
     border: none;
-    background-color: #E6F0F9;
+    /* background-color: #5D5AFF; */
     border-radius: 10px;
     box-shadow: inset 1px 1px 3px black;
 }
@@ -176,7 +186,59 @@ section{
     width: 70px;
     padding: 23px;
     border: none;
-    background-color: #E6F0F9;
+    /* background-color: #5D5AFF; */
     border-radius: 10px;
     box-shadow: inset 1px 1px 3px black;
+}
+.samecolor{
+    background-color: #5D5AFF;
+}
+
+
+
+
+
+@media screen and (max-width : 500px){
+    header{
+        height: 70px;
+        font-size: 6px;
+    }
+    #headArea{
+        font-size: 18px;
+    }
+    #darkDiv,#lightDiv{
+        flex-basis: 10%;
+        padding: 0.3rem 0rem;
+    }
+    #darkDiv > img,#lightDiv > img{
+        width: 30px;
+    }
+    section{
+        height: 500px; 
+        width: 350px;
+        border-radius: 20px;
+    }
+    #resultArea{
+        padding: 8px 0px;
+    }
+    #resultArea > input{
+        width: 310px;
+        padding: 8px;
+    }
+    #onOffArea{
+        padding: 13px;
+    }
+    #div_btn > input{
+        width: 70px;
+        padding: 8px;
+        font-size: 11px;
+    }
+    #num_row1 > input,#num_row2 > input,#div_col1 > div > input,#div_col2 > div > input,
+    #div_col3 > div > input,#div_col4 > div > input, #div_col5 > div > input {
+        width: 55px;
+        padding: 18px;
+    }
+    #div_col4 > div > input{
+        height: 125px;
+    }
 }
