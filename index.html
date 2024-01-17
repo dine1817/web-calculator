@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="darkDiv">
+        <h4 id="dMode" onclick="darkMode()">&#9632</h4>
+    </div>
+    
+    <header>
+        <h1 id="message"></h1>
+    </header>
+    
+    <section>
+        <div id="headArea">
+            <h1>DINE-18</h1>
+            <h3>WEB CALCULATOR</h3>
+        </div>
+        <div id="resultArea">
+            <input type="text" placeholder="" id="result" class="display_box" readonly>
+        </div>
+        <div id="onOffArea">
+            <div id="div_result">
+                <!-- <input type="text" id="on_of_Result" readonly> -->
+            </div>
+            <div id="div_btn">
+                <input type="button" id="on_off_Btn" value="TURN ON" onclick="onOffFunction()" class="on">
+            </div>
+        </div>
+        <div id="num_row1">
+            <input type="button" value="7" onclick="display('7')">
+            <input type="button" value="8" onclick="display('8')">
+            <input type="button" value="9" onclick="display('9')">
+            <input type="button" value="C" onclick="clearScreen()">
+            <input type="button" value="<=" onclick="clearLast()">
+        </div>
+        <div id="num_row2">
+            <input type="button" value="4" onclick="display('4')"> 
+            <input type="button" value="5" onclick="display('5')">
+            <input type="button" value="6" onclick="display('6')">
+            <input type="button" value="*" onclick="display('*')">
+            <input type="button" value="/" onclick="display('/')">
+        </div>
+        <div id="num_row3">
+            <div id="div_col1">
+                <div><input type="button" value="1" onclick="display('1')"></div>
+                <div><input type="button" value="0" onclick="display('0')"></div>
+            </div>
+            <div id="div_col2">
+                <div><input type="button" value="2" onclick="display('2')"></div>
+                <div><input type="button" value="00" onclick="display('00')"></div>
+            </div>
+            <div id="div_col3">
+                <div><input type="button" value="3" onclick="display('3')"></div>
+                <div><input type="button" value="." onclick="display('.')"></div>
+            </div>
+            <div id="div_col4">
+                <div><input type="button" value="+" onclick="display('+')"></div>
+            </div>
+            <div id="div_col5" action = "cal">
+                <div><input type="button" value="-" onclick="display('-')"></div>
+                <div><input type="button" value="=" onclick="calculate()" name="result"></div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

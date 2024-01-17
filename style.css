@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgb(83, 81, 81);
+    font-family: monospace;
+}
+header{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px white;
+}
+section{
+    /* rgb(229,239,248) */
+    height: 600px; 
+    width: 450px;
+    background-color: rgb(229,239,248);
+    margin: 0px auto;
+    border-radius: 30px;
+}
+#darkDiv{
+    position: relative;
+}
+#dMode{
+    position: absolute;
+    top: 80px;
+    left: 62%;
+    font-size: 28px;
+}
+#headArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-large;
+    padding: 15px 0px;
+}
+#resultArea{
+    display: flex;
+    justify-content: center;
+    padding: 10px 23px;
+}
+#resultArea > input{
+    width: 550px;
+    padding: 20px;
+    background-color: #839299;
+    border-radius: 10px;
+    outline: outset;
+    outline-width: 10px;
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: end;
+}
+#onOffArea{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#div_result > input{
+    width: 150px;
+    padding: 10px;
+    background-color: #595E62;
+    border: none;
+}
+#div_btn > input{
+    width: 85px;
+    padding: 8px;
+    border: none;
+    background-color: #E6F0F9;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    font-size: 14px;
+    font-weight: bold;
+}
+#num_row1 {
+    display: flex;
+    padding: 0px 15px;
+    justify-content: space-around;
+}
+#num_row1 > input {
+    width: 70px;
+    padding: 23px;
+    border: none;
+    background-color: #E6F0F9;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 3px black;
+}
+#num_row2 {
+    display: flex;
+    padding: 20px 15px 0px 15px;
+    justify-content: space-around;
+}
+#num_row2 > input {
+    width: 70px;
+    padding: 23px;
+    border: none;
+    background-color: #E6F0F9;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 3px black;
+}
+#num_row3 {
+    display: flex;
+    padding: 0px 15px;
+}
+#div_col1,#div_col2,#div_col3,#div_col4,#div_col5 {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#div_col1 > div {
+    padding-top: 20px;   
+}
+#div_col1 > div > input{
+    width: 70px;
+    padding: 23px;
+    border: none;
+    background-color: #E6F0F9;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 3px black;
+}
+#div_col2 > div {
+    padding-top: 20px;
+}
+#div_col2 > div > input{
+    width: 70px;
+    padding: 23px;
+    border: none;
+    background-color: #E6F0F9;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 3px black;
+}
+#div_col3 > div {
+    padding-top: 20px;
+}
+#div_col3 > div > input{
+    width: 70px;
+    padding: 23px;
+    border: none;
+    background-color: #E6F0F9;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 3px black;
+}
+#div_col4 > div {
+    padding-top: 20px;
+}
+#div_col4 > div > input{
+    width: 70px;
+    height: 145px;
+    padding: 23px;
+    border: none;
+    background-color: #E6F0F9;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 3px black;
+}
+#div_col5 > div {
+    padding-top: 20px;
+}
+#div_col5 > div > input{
+    width: 70px;
+    padding: 23px;
+    border: none;
+    background-color: #E6F0F9;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 3px black;
+}
+#div_col5 > form {
+    padding-top: 20px;
+}
+#div_col5 > form > input{
+    width: 70px;
+    padding: 23px;
+    border: none;
+    background-color: #E6F0F9;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 3px black;
+}
