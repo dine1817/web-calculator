@@ -4,21 +4,26 @@
     margin: 0px;
 }
 body{
+    width: 100%;
     height: 100vh;
     background: url("./pay-2662758_1920.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.68))
     ,url("./pay-2662758_1920.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     font-family: monospace;
 }
 header{
-    height: 70px;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: whitesmoke;
     font-size: 12px;
+}
+main{
+    height: 90vh;
 }
 #num_row1 input,#num_row2 input,#num_row3 input,#num_row4 input,#num_row5 input{
     font-size: 15px;
